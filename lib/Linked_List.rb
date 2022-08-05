@@ -1,7 +1,6 @@
 require_relative 'Node'
 
 class Linked_List
-  attr_accessor :head, :tail
 
   def initialize(value=nil)
     @node = Node.new(value) unless value.nil?
@@ -55,7 +54,7 @@ class Linked_List
       print "( #{curr_node.value} ) -> "
       curr_node = curr_node.next_node
     end
-    print 'nil'
+    puts 'nil'
   end
 
   def insert_at(index, value)
@@ -64,6 +63,14 @@ class Linked_List
 
   def remove_at(index)
     # Remove a node at a given index
+  end
+
+  def head
+    @head.value
+  end
+
+  def tail
+    @tail.value
   end
 
 end

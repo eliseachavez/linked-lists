@@ -5,13 +5,23 @@ LL = Linked_List.new('Dad')
 LL.append('Chris')
 LL.to_s
 LL.prepend('Mom')
+LL.to_s
 LL.append('Andrea')
+LL.to_s
 LL.append('Chelsea')
+LL.to_s
 LL.append('Elise')
+LL.to_s
 LL.append('Eva')
+LL.to_s
 LL.append('Hannah')
+LL.to_s
 LL.remove_at(8) # remove Hannah
+puts "Remove hannah..."
+LL.to_s
+puts "Put JJ at the end instead"
 LL.insert_at(8, 'Julianna') # add JJ
+LL.to_s
 puts "The size of the family is #{LL.size}"
 puts "The head of the family is #{LL.head}"
 puts "The youngest family member is #{LL.tail}"
