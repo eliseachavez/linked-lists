@@ -1,11 +1,11 @@
 require_relative 'Linked_List'
 require_relative 'Node'
 
-LL = Linked_List.new('Dad')
+LL = Linked_List.new('Mom')
 LL.append('Chris')
 LL.to_s
 puts "#{LL.size}"
-# LL.prepend('Mom')
+LL.prepend('Dad')
 LL.to_s
 puts "#{LL.size}"
 LL.append('Andrea')
@@ -37,7 +37,7 @@ puts "JJ moved to Duluth, so we'll remove her."
 LL.pop
 puts "Is JJ in the family still? #{LL.contains?('Julianna')}"
 puts "Is Eva in the family? She should be. #{LL.contains?('Eva')}"
-puts "What order in the family is Elise? puts #{find?('Elise')}"
+puts "What order in the family is Elise? puts #{LL.find?('Elise')}"
 puts 'Ok, JJ is back in the family.'
 LL.insert_at(8, 'Julianna')
 puts "And this is the whole family now:\n"

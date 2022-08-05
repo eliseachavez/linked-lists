@@ -15,14 +15,21 @@ class Linked_List
     if @head.value.nil?
       @head = new_node
     else
-      # make current tail point to this new node
-      @tail.next_node = new_node #adress of this new node
+      @tail.next_node = new_node
     end
     @tail = new_node
   end
 
   def prepend(value)
     # Add a new node containing value to the FRONT of the list
+    new_node = Node.new(value)
+
+    if @head.value.nil?
+      @tail = new_node
+    else
+      new_node.next_node = @head
+    end
+    @head = new_node
   end
 
   def size
