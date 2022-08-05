@@ -2,7 +2,7 @@ require 'Linked_List'
 
 class Linked_List
 
-  def initialize(node)
+  def initialize(node=nil)
     @node = node
   end
 
@@ -45,6 +45,14 @@ class Linked_List
   def to_s
     # Represent the LL as strings so it can be printed to the console
     # E.g., ( value ) -> ( value ) -> ( value ) -> nil
+  end
+
+  def insert_at(index)
+
+  end
+
+  def remove_at(index)
+
   end
 
 end
