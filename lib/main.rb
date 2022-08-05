@@ -22,10 +22,17 @@ LL.to_s
 puts "#{LL.size}"
 LL.append('Hannah')
 LL.to_s
-#LL.remove_at(8) # remove Hannah
+
+
+LL.remove_at(8) # remove Hannah
 puts "Remove hannah..."
 LL.to_s
-puts "Put JJ at the end instead"
+puts "will now remove Elise and then add her back"
+LL.remove_at(6)
+LL.to_s
+puts "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&"
+
+puts 'Put JJ at the end instead'
 #LL.insert_at(8, 'Julianna') # add JJ
 LL.to_s
 puts "The size of the family is #{LL.size}"
@@ -40,6 +47,6 @@ puts "Is JJ in the family still? #{LL.contains?('Julianna')}"
 puts "Is Eva in the family? She should be. #{LL.contains?('Eva')}"
 puts "What order in the family is Elise? #{LL.find('Elise')}"
 puts 'Ok, JJ is back in the family.'
-LL.insert_at(8, 'Julianna')
+#LL.insert_at(8, 'Julianna')
 puts "And this is the whole family now:\n"
 LL.to_s

@@ -115,6 +115,17 @@ class Linked_List
 
   def remove_at(index)
     # Remove a node at a given index
+    i = 1
+    curr_node = @head
+    prev_node = nil
+
+    until curr_node.nil?
+      prev_node.next_node = curr_node.next_node if i == index
+
+      prev_node = curr_node
+      curr_node = curr_node.next_node
+      i += 1
+    end
   end
 
   def head
