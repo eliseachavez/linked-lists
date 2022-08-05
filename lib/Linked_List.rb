@@ -47,12 +47,12 @@ class Linked_List
     # E.g., ( value ) -> ( value ) -> ( value ) -> nil
   end
 
-  def insert_at(index)
-
+  def insert_at(index, value)
+    # Insert a node at a given index
   end
 
   def remove_at(index)
-
+    # Remove a node at a given index
   end
 
 end
