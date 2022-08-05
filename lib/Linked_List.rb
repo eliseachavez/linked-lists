@@ -111,6 +111,18 @@ class Linked_List
 
   def insert_at(index, value)
     # Insert a node at a given index
+    new_node = Node.new(value)
+    i = 2
+    curr_node = @head
+
+    until i > index
+      if i == index
+        new_node.next_node = curr_node.next_node
+        curr_node.next_node = new_node
+      end
+      curr_node = curr_node.next_node
+      i += 1
+    end
   end
 
   def remove_at(index)
