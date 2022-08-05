@@ -1,7 +1,7 @@
 require_relative 'Linked_List'
 require_relative 'Node'
 
-LL = Linked_List('Dad')
+LL = Linked_List.new('Dad')
 LL.append('Chris')
 LL.prepend('Mom')
 LL.append('Andrea')
