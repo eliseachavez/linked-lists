@@ -27,7 +27,13 @@ class Linked_List
 
   def size
     # Returns the number of nodes in the list
-
+    curr_node = @head
+    size = 0
+    until curr_node.nil?
+      size += 1
+      curr_node = curr_node.next_node
+    end
+    size
   end
 
   def at(index)

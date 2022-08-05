@@ -4,16 +4,22 @@ require_relative 'Node'
 LL = Linked_List.new('Dad')
 LL.append('Chris')
 LL.to_s
-LL.prepend('Mom')
+puts "#{LL.size}"
+# LL.prepend('Mom')
 LL.to_s
+puts "#{LL.size}"
 LL.append('Andrea')
 LL.to_s
+puts "#{LL.size}"
 LL.append('Chelsea')
 LL.to_s
+puts "#{LL.size}"
 LL.append('Elise')
 LL.to_s
+puts "#{LL.size}"
 LL.append('Eva')
 LL.to_s
+puts "#{LL.size}"
 LL.append('Hannah')
 LL.to_s
 LL.remove_at(8) # remove Hannah
