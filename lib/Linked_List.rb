@@ -45,6 +45,14 @@ class Linked_List
 
   def at(index)
     # Returns the node at the given index
+    curr_node = @head
+    i = 1
+
+    until curr_node.nil?
+      return curr_node if i == index
+      curr_node = curr_node.next_node
+      i += 1
+    end
   end
 
   def pop
