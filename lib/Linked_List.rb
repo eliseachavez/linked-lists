@@ -60,7 +60,6 @@ class Linked_List
     i = 1
     curr_node = @head
     popped_size = size - 1
-    removed_node = @tail
 
     until i == popped_size
       curr_node = curr_node.next_node
@@ -69,7 +68,6 @@ class Linked_List
     end
 
     @tail.next_node = nil
-    removed_node
   end
 
   def contains?(value)
@@ -120,6 +118,9 @@ class Linked_List
         new_node.next_node = curr_node.next_node
         curr_node.next_node = new_node
       end
+      @head = new_node if index == 1
+      @tail = new_node if index == size
+
       curr_node = curr_node.next_node
       i += 1
     end
