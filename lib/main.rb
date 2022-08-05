@@ -3,6 +3,7 @@ require_relative 'Node'
 
 LL = Linked_List.new('Dad')
 LL.append('Chris')
+LL.to_s
 LL.prepend('Mom')
 LL.append('Andrea')
 LL.append('Chelsea')

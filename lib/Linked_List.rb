@@ -11,7 +11,15 @@ class Linked_List
 
   def append(value)
     # Add a new node containing value to the END of the list
+    new_node = Node.new(value)
 
+    if @head.value.nil?
+      @head = new_node
+    else
+      # make current tail point to this new node
+      @tail.next_node = new_node #adress of this new node
+    end
+    @tail = new_node
   end
 
   def prepend(value)
@@ -42,6 +50,12 @@ class Linked_List
   def to_s
     # Represent the LL as strings so it can be printed to the console
     # E.g., ( value ) -> ( value ) -> ( value ) -> nil
+    curr_node = @head
+    until curr_node.nil?
+      print "( #{curr_node.value} ) -> "
+      curr_node = curr_node.next_node
+    end
+    print 'nil'
   end
 
   def insert_at(index, value)
