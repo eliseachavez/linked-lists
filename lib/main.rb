@@ -35,6 +35,7 @@ puts 'Who is the 4th person in the family order?'\
 "\nIt should be Andi, after Mom, Dad, and Chris. #{LL.at(4)}"
 puts "JJ moved to Duluth, so we'll remove her."
 LL.pop
+LL.to_s
 puts "Is JJ in the family still? #{LL.contains?('Julianna')}"
 puts "Is Eva in the family? She should be. #{LL.contains?('Eva')}"
 puts "What order in the family is Elise? puts #{LL.find?('Elise')}"
