@@ -38,7 +38,7 @@ LL.pop
 LL.to_s
 puts "Is JJ in the family still? #{LL.contains?('Julianna')}"
 puts "Is Eva in the family? She should be. #{LL.contains?('Eva')}"
-puts "What order in the family is Elise? puts #{LL.find?('Elise')}"
+puts "What order in the family is Elise? #{LL.find('Elise')}"
 puts 'Ok, JJ is back in the family.'
 LL.insert_at(8, 'Julianna')
 puts "And this is the whole family now:\n"
