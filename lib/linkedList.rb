@@ -1,6 +1,6 @@
 require_relative 'Node'
 
-class Linked_List
+class linkedList
 
   def initialize(value=nil)
     @node = Node.new(value) unless value.nil?
@@ -50,6 +50,7 @@ class Linked_List
 
     until curr_node.nil?
       return curr_node if i == index
+
       curr_node = curr_node.next_node
       i += 1
     end

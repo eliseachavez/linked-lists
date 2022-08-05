@@ -1,4 +1,4 @@
-require_relative 'Linked_List'
+require_relative 'linkedList'
 require_relative 'Node'
 
 puts 'Let\'s make a family: add the family members and count them'
