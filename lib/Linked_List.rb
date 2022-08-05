@@ -1,29 +1,26 @@
-require 'Linked_List'
+require_relative 'Node'
 
 class Linked_List
+  attr_accessor :head, :tail
 
-  def initialize(node=nil)
-    @node = node
+  def initialize(value=nil)
+    @node = Node.new(value) unless value.nil?
+    @head = @node
+    @tail = @node
   end
 
   def append(value)
-    # Add a new node containing value to the end of the list
+    # Add a new node containing value to the END of the list
+
   end
 
   def prepend(value)
-    # Add a new node containing value to the front of the list
+    # Add a new node containing value to the FRONT of the list
   end
 
   def size
     # Returns the number of nodes in the list
-  end
 
-  def head
-    # Returns the first node in the list
-  end
-
-  def tail
-    # Returns the last node in the list
   end
 
   def at(index)
